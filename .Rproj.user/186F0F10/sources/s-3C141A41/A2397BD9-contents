@@ -88,13 +88,22 @@ hash_path_demographics <- paste('D:\\Docs\\Corona Research\\ontario_coronavirus_
 saveRDS(all_data_hash, hash_path_case_death)
 saveRDS(demographic_data_hash, hash_path_demographics)
 
-# Saving by PHU
+# Saving all_data_hash by PHU
 for (phu in phu_name) {
-  phu_path <- file.path('D:\\Docs\\Corona Research\\ontario_coronavirus_data_repo\\data\\ontario\\by_phu',
+  phu_path <- file.path('D:\\Docs\\Corona Research\\ontario_coronavirus_data_repo\\data\\ontario\\by_phu\\case_death',
                         phu)
   dir.create(phu_path, showWarnings = FALSE)
   setwd(phu_path)
   write.csv(all_data_hash[[phu]], sprintf("%s.csv", phu))
+}
+
+# Saving demographic_data_hash by PHU
+for (phu in phu_name) {
+  phu_path <- file.path('D:\\Docs\\Corona Research\\ontario_coronavirus_data_repo\\data\\ontario\\by_phu\\demographics',
+                        phu)
+  dir.create(phu_path, showWarnings = FALSE)
+  setwd(phu_path)
+  write.csv(demographic_data_hash[[phu]], sprintf("%s.csv", phu))
 }
 
 # Creating and saving PHU adjacency list
