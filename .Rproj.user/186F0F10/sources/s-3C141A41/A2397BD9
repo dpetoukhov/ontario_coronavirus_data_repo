@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593706785653.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A2397BD9",
+    "lastKnownWriteTime" : 1593706796,
+    "last_content_update" : 1594524990202,
+    "path" : "D:/Docs/Corona Research/ontario_coronavirus_data_repo/oph_data_script.R",
+    "project_path" : "oph_data_script.R",
+    "properties" : {
+        "cursorPosition" : "151,9",
+        "scrollLine" : "123"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
