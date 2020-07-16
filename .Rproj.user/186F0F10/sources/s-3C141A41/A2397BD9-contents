@@ -266,4 +266,16 @@ gitadd()
 gitcommit()
 gitpush()
 
+# incidence = new cases, prevalance = aggregate cases
+
+# Try PCA analysis on new data; many of it is correlated.
+# Use standard time series GLM
+
+# number of tests: https://covid-19.ontario.ca/data
+# tscount: for count time series
+# if using cases as covariates, need to forecast those first
+# random effects model
+# use regular GLM
+# tscount: for exponential model (1), use log link function (g function)
+# add Fourier term to denote a 7 day cycle (deaths are always low on weekends) (use a harmonic function); or put in dummy variable for each day of week.
 
