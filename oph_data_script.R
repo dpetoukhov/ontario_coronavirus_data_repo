@@ -4,6 +4,9 @@ library(dplyr)
 library(magrittr)
 library(git2r)
 library(utils)
+library(RSelenium)
+library(here)
+library(rJava)
 
 # Temporary files for data extraction
 temp_graphs <- tempfile(fileext = ".xlsx")
@@ -214,6 +217,35 @@ for (country in country_names) {
   setwd(country_path)
   write.csv(global_data[global_data$countriesAndTerritories == country,], sprintf("%s.csv", country))
 }
+
+
+
+# Pulling test data
+#
+testing_url <- "https://covid-19.ontario.ca/data"
+file_name <- "testing_data_ontario.csv"
+download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
+driver <- rsDriver(
+  broswer = "chrome",
+  chromever = "84.0.4147.89"
+)
+#driver <- remoteDriver()
+#driver$open
+#driver$navigate(testing_url)
+server <- driver$server
+browser <- driver$client
+browser$navigate(url)
+buttons <- list()
+while (length(buttons) == 0) {
+  buttons <- browser$findElements(
+    "apexcharts34e94f > div.apexcharts-toolbar > div.apexcharts-menu.apexcharts-menu-open > div.apexcharts-menu-item.exportCSV",
+    using = "css selector"
+  )
+}
+buttons[[1]]$clickElement()
+browser$close()
+server$stop()
+
 
 
 # # Save all relevant data at end of script for direct sharing purposes.
