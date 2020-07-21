@@ -1,5 +1,5 @@
 "","ageRange","countMaleCases","rateMaleCases","countFemaleCases","rateFemaleCases","countAllCases","rateAllCases","countMaleHosp","rateMaleHosp","countFemaleHosp","rateFemaleHosp","countAllHosp","rateAllHosp","countMaleDeath","rateMaleDeath","countFemaleDeath","rateFemaleDeath","countAllDeath","rateAllDeath","countUnkGenderDeath","countUnkGenderHosp","countUnkGenderCases","countUnkGenderAgeDeath","countUnkGenderAgeHosp","countUnkGenderAgeCases"
-"1","0-9",1,17,0,0,1,8.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"1","0-9",1,17,1,18.3,2,17.6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "2","10-19",0,0,2,36.4,2,17.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "3","20-29",4,65.9,3,53.5,7,59.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "4","30-39",7,139.4,5,101.3,12,120.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -9,4 +9,4 @@
 "8","70-79",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "9","80-89",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "10","90+",0,0,1,212.3,1,143.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"11","Total",25,56.4,17,39.2,42,47.9,1,2.3,0,0,1,1.1,0,0,0,0,0,0,0,0,0,0,0,0
+"11","Total",25,56.4,18,41.5,43,49,1,2.3,0,0,1,1.1,0,0,0,0,0,0,0,0,0,0,0,0
